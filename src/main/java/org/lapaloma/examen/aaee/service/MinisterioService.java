@@ -24,7 +24,7 @@ public class MinisterioService {
         List<Ministerio> lista = ministerioDAO.obtenerListaMinisterios();
 
         // Esto provoca error
-        lista = null;
+       // lista = null; esto tiene un error
         
         if (lista == null || lista.isEmpty()) {
             throw new RuntimeException("No hay miinisterios disponibles");
